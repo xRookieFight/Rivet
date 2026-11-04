@@ -98,7 +98,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
       - name: Install the NDK
         run: sdkmanager "ndk;28.2.13676358"
       - name: Build a signed APK
