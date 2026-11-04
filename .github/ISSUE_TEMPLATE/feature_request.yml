@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest a screen or feature github.com has that Rivet is missing
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rivet aims to look and behave like github.com. Requests that bring Rivet closer to GitHub are the easiest to accept.
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like?
+      description: Describe the feature and how you'd use it.
+    validations:
+      required: true
+  - type: input
+    id: github
+    attributes:
+      label: Where is it on github.com?
+      description: A link to the page or a short description of where GitHub has it, if it does.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Anything else?
+      description: Workarounds you use today, screenshots, related issues.

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Rivet
+GenericName=GitHub Client
+Comment=Native GitHub desktop client
+Exec=rivet
+Icon=dev.rivet.Rivet
+Terminal=false
+Categories=Development;RevisionControl;
+StartupWMClass=dev.rivet.Rivet
+Keywords=github;git;pull request;issues;

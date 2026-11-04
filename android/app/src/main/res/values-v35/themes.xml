@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- egui doesn't know about system bar insets yet, so keep the content clear of them -->
+    <style name="Theme.Rivet" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

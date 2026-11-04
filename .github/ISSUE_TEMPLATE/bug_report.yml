@@ -1,0 +1,50 @@
+name: Bug report
+description: Something in Rivet is broken or behaves differently from github.com
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please don't paste tokens, and check that the bug isn't already reported.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a repository
+        2. Go to the Actions tab
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Rivet version
+      description: The release you downloaded, or the commit you built from.
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux (Wayland)
+        - Linux (X11)
+        - Android
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If it's a layout problem, a screenshot of Rivet next to the same page on github.com helps a lot.
