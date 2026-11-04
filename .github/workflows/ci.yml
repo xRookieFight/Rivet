@@ -69,9 +69,9 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
-      - uses: android-actions/setup-android@v3
+      # the runner image ships the SDK, only the NDK version we pin is missing
       - name: Install the NDK
-        run: sdkmanager "ndk;28.2.13676358"
+        run: $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --install "ndk;28.2.13676358" > /dev/null
       - name: Build the APK
         working-directory: android
         run: ./gradlew assembleDebug
