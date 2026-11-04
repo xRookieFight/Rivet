@@ -74,7 +74,7 @@ jobs:
           New-Item -ItemType Directory -Force "dist/$env:NAME" | Out-Null
           Copy-Item "target/${{ matrix.target }}/release/rivet.exe", README.md, LICENSE-MIT, LICENSE-APACHE "dist/$env:NAME/"
           Compress-Archive -Path "dist/$env:NAME" -DestinationPath "dist/$env:NAME.zip"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: ${{ env.NAME }}
           path: |
@@ -117,7 +117,7 @@ jobs:
       - name: Skip the APK without a keystore
         if: env.KEYSTORE_BASE64 == ''
         run: echo "::warning::ANDROID_KEYSTORE_BASE64 is not set, so this release has no APK"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: env.KEYSTORE_BASE64 != ''
         with:
           name: rivet-android
