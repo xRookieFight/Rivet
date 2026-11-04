@@ -63,19 +63,6 @@ Pick one on the sign in screen:
 
 Tokens are kept in the OS keychain (Keychain, Credential Manager, Secret Service, Android Keystore). Only the login and avatar URL are written to the preferences file. Several accounts can be added and switched from the avatar menu.
 
-## What's in it
-
-* **Dashboard:** top repositories, organizations, contribution graph, pinned repositories, activity feed, inbox summary.
-* **Repositories:** file browser, README, About sidebar with languages and releases, file viewer with syntax highlighting and an in place editor that commits directly or to a new branch with a pull request. Branches, tags, releases, commit history and single commit diffs. Star, watch, fork, create, edit settings, change visibility, archive and delete.
-* **Issues:** query based filtering, create with issue templates and YAML issue forms, comments, reactions, labels, assignees, milestones, close as completed or not planned.
-* **Pull requests:** compare branches, PR templates (including several templates), conversation timeline, commits, checks, changed files, line review comments, approve or request changes, merge with any enabled method, reviewers, draft to ready.
-* **Actions:** workflows, runs, jobs and steps, logs with search, manual dispatch with typed inputs, re-run and cancel. Running jobs refresh on their own.
-* **Notifications:** inbox with reason and repository filters, mark read, mark done, unsubscribe, jumps straight to the issue, PR or run.
-* **Search:** code, repositories, issues, pull requests, users and commits with GitHub's qualifiers.
-* **Files tab:** dedicated managers for the README (templates, badges, live GFM preview), issue and PR templates (grouped by kind, YAML forms previewed as forms), and community and config files: LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY, FUNDING.yml, .gitignore, .editorconfig, CODEOWNERS, Dependabot and workflows. Labels and branch protection rules have their own screens too.
-* **Local git (desktop):** clone, open local repositories, stage and unstage, commit, fetch, pull, push, create, switch, merge and delete branches, manage remotes, history, and a visual merge conflict resolver.
-* **Desktop bits:** command palette (Ctrl/⌘ K, accepts `owner/name` or pasted github.com links), GitHub keyboard shortcuts (`/`, `g d`, `g n`, `g i`, `g p`), back and forward history, native file dialogs, light, dark and system themes.
-
 ## Development
 
 ```sh
