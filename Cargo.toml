@@ -13,7 +13,7 @@ members = ["android"]
 
 [dependencies]
 anyhow = "1"
-base64 = "0.22"
+base64 = "0.23"
 chrono = { version = "0.4", features = ["serde"] }
 directories = "6"
 eframe = { version = "0.37", default-features = false, features = ["default_fonts", "glow", "links", "persistence", "wayland", "x11", "accesskit"] }
@@ -27,7 +27,7 @@ reqwest = { version = "0.13", default-features = false, features = ["json", "rus
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 serde_yaml_ng = "0.10"
-similar = "2"
+similar = "3"
 urlencoding = "2"
 
 [target.'cfg(not(target_os = "android"))'.dependencies]
