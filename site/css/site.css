@@ -1,0 +1,479 @@
+/* Hallmark · genre: modern-minimal · macrostructure: Workbench · theme: custom (Primer dark) · enrichment: none (real screenshots) · nav: N5 · footer: Ft2
+ * tone: technical · anchor hue: 255 (Primer blue) · CTA: Primer green
+ * pre-emit critique: P4 H5 E4 S5 R5 V4
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-accent);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip {
+  position: absolute;
+  left: var(--space-md);
+  top: -4rem;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--color-paper-2);
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  z-index: 20;
+}
+
+.skip:focus-visible {
+  top: var(--space-md);
+}
+
+/* nav: floating pill */
+
+.nav-wrap {
+  position: sticky;
+  top: var(--space-md);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--space-md);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-md);
+  background: color-mix(in oklch, var(--color-paper-inset) 82%, transparent);
+  backdrop-filter: blur(12px);
+  border: var(--rule-hair) solid var(--color-rule-muted);
+  border-radius: var(--radius-pill);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-brand:hover {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-2xs);
+}
+
+.nav-links a {
+  padding: var(--space-2xs) var(--space-sm);
+  border-radius: var(--radius-pill);
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+}
+
+.nav-links a:hover {
+  color: var(--color-ink);
+  background: var(--color-paper-3);
+}
+
+/* hero */
+
+main {
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.hero {
+  padding-top: var(--space-3xl);
+}
+
+.hero-text {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: var(--space-2xl);
+  align-items: end;
+}
+
+.hero h1 {
+  font-size: var(--text-display);
+}
+
+.lede {
+  margin: 0;
+  color: var(--color-ink-muted);
+  font-size: var(--text-lg);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.meta {
+  margin: var(--space-md) 0 0;
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+}
+
+/* buttons, Primer style */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0 var(--space-lg);
+  border: var(--rule-hair) solid transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: var(--color-cta);
+  color: var(--color-cta-ink);
+}
+
+.btn-primary:hover {
+  background: var(--color-cta-hover);
+}
+
+.btn-primary:active {
+  background: var(--color-cta-active);
+}
+
+.btn-secondary {
+  background: var(--color-paper-2);
+  border-color: var(--color-rule);
+  color: var(--color-ink);
+}
+
+.btn-secondary:hover {
+  background: var(--color-paper-3);
+}
+
+/* screenshots: the app's own window is the frame, so just a hairline */
+
+.shot {
+  margin: 0;
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-paper-inset);
+}
+
+.shot-hero {
+  margin-top: var(--space-2xl);
+}
+
+/* tour */
+
+.tour {
+  display: grid;
+  gap: var(--space-3xl);
+  padding-top: var(--space-3xl);
+}
+
+.step {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr);
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+/* every other step puts the caption on the right, so the wide track flips too */
+.step:nth-child(odd of .step) {
+  grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr);
+}
+
+.step:nth-child(odd of .step) .step-text {
+  order: 2;
+}
+
+.step-text {
+  position: sticky;
+  top: 6rem;
+}
+
+.step h3 {
+  font-size: var(--text-xl);
+}
+
+.step p {
+  margin: var(--space-sm) 0 0;
+  color: var(--color-ink-muted);
+}
+
+/* also in the box */
+
+.more,
+.download {
+  padding-top: var(--space-3xl);
+}
+
+.more h2,
+.download h2 {
+  font-size: var(--text-2xl);
+}
+
+.more-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: var(--space-xl) 0 0;
+  border-top: var(--rule-hair) solid var(--color-rule-muted);
+}
+
+.more-list > div {
+  padding: var(--space-lg) var(--space-lg) var(--space-lg) 0;
+  border-bottom: var(--rule-hair) solid var(--color-rule-muted);
+}
+
+.more-list dt {
+  font-weight: 600;
+}
+
+.more-list dd {
+  margin: var(--space-2xs) 0 0;
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+}
+
+kbd {
+  padding: 0 0.35em;
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  background: var(--color-paper-2);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--color-ink);
+}
+
+/* download */
+
+.download-lede {
+  margin: var(--space-md) 0 0;
+  color: var(--color-ink-muted);
+}
+
+.platforms {
+  list-style: none;
+  margin: var(--space-lg) 0 var(--space-xl);
+  padding: 0;
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.platforms li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-xs) var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-paper-2);
+}
+
+.platforms li + li {
+  border-top: var(--rule-hair) solid var(--color-rule-muted);
+}
+
+.platform {
+  font-weight: 600;
+}
+
+.platforms code,
+.code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  overflow-wrap: anywhere;
+}
+
+.code {
+  margin: var(--space-md) 0 0;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-paper-inset);
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius-md);
+  color: var(--color-ink);
+  overflow-x: auto;
+}
+
+/* footer: one line */
+
+.footer {
+  max-width: var(--page-max);
+  margin: var(--space-3xl) auto 0;
+  padding: var(--space-lg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-sm) var(--space-lg);
+  border-top: var(--rule-hair) solid var(--color-rule-muted);
+  color: var(--color-ink-muted);
+  font-size: var(--text-sm);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-brand {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+/* narrow screens */
+
+@media (max-width: 52rem) {
+  .hero {
+    padding-top: var(--space-2xl);
+  }
+
+  .hero-text,
+  .step,
+  .step:nth-child(odd of .step) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .step:nth-child(odd of .step) .step-text {
+    order: 0;
+  }
+
+  .step-text {
+    position: static;
+  }
+
+  .more-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .more-list > div {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 26rem) {
+  main {
+    padding: 0 var(--space-md);
+  }
+
+  .nav {
+    gap: var(--space-sm);
+  }
+
+  .nav-links a {
+    padding: var(--space-2xs) var(--space-xs);
+  }
+
+  /* the tour is right below the fold anyway, keep the nav on one line */
+  .nav-optional {
+    display: none;
+  }
+
+  .actions .btn {
+    flex: 1 1 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 1ms !important;
+  }
+
+  .btn:active {
+    transform: none;
+  }
+}

@@ -1,0 +1,53 @@
+/* Hallmark · tokens · theme: custom (GitHub Primer dark, the app's own palette)
+ * axes: dark / geometric-sans / cool
+ */
+:root {
+  /* Primer dark, converted to OKLCH */
+  --color-paper: oklch(17.6% 0.015 257);        /* canvas #0d1117 */
+  --color-paper-inset: oklch(11% 0.012 265);    /* canvas inset #010409 */
+  --color-paper-2: oklch(20.5% 0.016 258);      /* canvas subtle #151b23 */
+  --color-paper-3: oklch(25% 0.017 257);        /* button hover */
+  --color-rule: oklch(39% 0.017 254);           /* border #3d444d */
+  --color-rule-muted: oklch(30% 0.016 256);
+  --color-ink: oklch(97.3% 0.008 248);          /* fg #f0f6fc */
+  --color-ink-muted: oklch(67.6% 0.017 253);    /* fg muted #9198a1 */
+  --color-accent: oklch(64.8% 0.17 255);        /* accent #4493f8 */
+  --color-cta: oklch(54.6% 0.14 147);           /* success emphasis #238636 */
+  --color-cta-hover: oklch(58% 0.145 146);
+  --color-cta-active: oklch(51% 0.13 147);
+  --color-cta-ink: oklch(100% 0 0);
+  --color-focus: oklch(64.8% 0.17 255);
+
+  --font-display: "Hubot Sans", "Mona Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Mona Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --text-display: clamp(2.5rem, 1.6rem + 4vw, 4.5rem);
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --rule-hair: 1px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+
+  --page-max: 72rem;
+}

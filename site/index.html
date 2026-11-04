@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rivet · a native GitHub client</title>
+  <meta name="description" content="Rivet is a native GitHub client written in Rust. Repositories, pull requests, issues, Actions and notifications, drawn natively with no web view.">
+  <meta name="theme-color" content="#0d1117">
+  <meta property="og:title" content="Rivet · a native GitHub client">
+  <meta property="og:description" content="GitHub as a native app for Windows, macOS, Linux and Android. Written in Rust, no web view.">
+  <meta property="og:image" content="screenshots/repo.png">
+  <link rel="icon" href="rivet.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@600;700&family=Mona+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="nav-brand" href="#top">
+        <img src="rivet.png" alt="" width="24" height="24">
+        <span>Rivet</span>
+      </a>
+      <div class="nav-links">
+        <a class="nav-optional" href="#tour">Tour</a>
+        <a href="#download">Download</a>
+        <a href="https://github.com/xRookieFight/Rivet">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1>GitHub, without the browser.</h1>
+        <div class="hero-side">
+          <p class="lede">Rivet is a native GitHub client written in Rust. Repositories, pull requests, issues, Actions and notifications look the way they do on github.com, but every screen is drawn natively with egui. There's no web view underneath.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://github.com/xRookieFight/Rivet/releases/latest">Download Rivet</a>
+            <a class="btn btn-secondary" href="https://github.com/xRookieFight/Rivet">View the source</a>
+          </div>
+          <p class="meta">Windows · macOS · Linux · Android. Free and open source.</p>
+        </div>
+      </div>
+      <figure class="shot shot-hero">
+        <img src="screenshots/repo.png" width="2560" height="1323" alt="Rivet showing the emilk/egui repository: file list, latest commit, About sidebar, releases and languages, in the dark theme.">
+      </figure>
+    </section>
+
+    <section class="tour" id="tour" aria-labelledby="tour-title">
+      <h2 id="tour-title" class="visually-hidden">A tour of Rivet</h2>
+
+      <article class="step">
+        <div class="step-text">
+          <h3>Review pull requests where you work.</h3>
+          <p>Read the conversation, step through commits, check runs and changed files, leave line comments, then approve or request changes. Merge with any method the repository allows, or flip a draft to ready.</p>
+        </div>
+        <figure class="shot">
+          <img src="screenshots/pull.png" width="2560" height="1323" loading="lazy" alt="A merged pull request in Rivet's light theme, with the conversation timeline, reviewers and labels.">
+        </figure>
+      </article>
+
+      <article class="step">
+        <div class="step-text">
+          <h3>Triage issues with GitHub's own queries.</h3>
+          <p>Filter with the same qualifiers you type on github.com. Open issues from templates and YAML forms, comment, react, set labels, assignees and milestones, and close as completed or not planned.</p>
+        </div>
+        <figure class="shot">
+          <img src="screenshots/issue.png" width="2560" height="1323" loading="lazy" alt="An open issue in Rivet's light theme, showing the issue body with a code block and the sidebar with labels.">
+        </figure>
+      </article>
+
+      <article class="step">
+        <div class="step-text">
+          <h3>Watch Actions without refreshing.</h3>
+          <p>Browse workflows, runs, jobs and steps. Search through logs, dispatch a workflow with typed inputs, re-run or cancel. Running jobs update on their own.</p>
+        </div>
+        <figure class="shot">
+          <img src="screenshots/actions.png" width="2560" height="1323" loading="lazy" alt="The Actions tab in Rivet's dark theme, listing workflows on the left and recent runs with their status.">
+        </figure>
+      </article>
+    </section>
+
+    <section class="more" aria-labelledby="more-title">
+      <h2 id="more-title">Also in the box</h2>
+      <dl class="more-list">
+        <div>
+          <dt>Local git</dt>
+          <dd>Clone, commit, branch, merge, push and pull, with a visual merge conflict resolver. Desktop only.</dd>
+        </div>
+        <div>
+          <dt>Notifications</dt>
+          <dd>An inbox with reason and repository filters that jumps straight to the issue, PR or run.</dd>
+        </div>
+        <div>
+          <dt>Search</dt>
+          <dd>Code, repositories, issues, pull requests, users and commits, with GitHub's qualifiers.</dd>
+        </div>
+        <div>
+          <dt>Keyboard first</dt>
+          <dd>A command palette on <kbd>Ctrl</kbd> <kbd>K</kbd> that takes pasted github.com links, plus GitHub's own shortcuts like <kbd>g</kbd> <kbd>n</kbd>.</dd>
+        </div>
+        <div>
+          <dt>Several accounts</dt>
+          <dd>Sign in with GitHub in the browser and switch accounts from the avatar menu. Tokens stay in your OS keychain.</dd>
+        </div>
+        <div>
+          <dt>Repository files</dt>
+          <dd>Editors for the README, issue and PR templates, labels, branch protection and community files.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="download" id="download" aria-labelledby="download-title">
+      <h2 id="download-title">Download</h2>
+      <p class="download-lede">Every release ships ready-built archives. Pick yours from the <a href="https://github.com/xRookieFight/Rivet/releases/latest">latest release</a>.</p>
+      <ul class="platforms">
+        <li><span class="platform">Windows</span><code>x86_64-pc-windows-msvc.zip</code></li>
+        <li><span class="platform">macOS, Apple silicon</span><code>aarch64-apple-darwin.tar.gz</code></li>
+        <li><span class="platform">macOS, Intel</span><code>x86_64-apple-darwin.tar.gz</code></li>
+        <li><span class="platform">Linux</span><code>x86_64-unknown-linux-gnu.tar.gz</code></li>
+        <li><span class="platform">Android 8.0+</span><code>android.apk</code></li>
+      </ul>
+      <p class="download-lede">Or build it yourself with a stable Rust toolchain:</p>
+      <pre class="code"><code>git clone https://github.com/xRookieFight/Rivet.git
+cd Rivet
+cargo run --release</code></pre>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span class="footer-brand">Rivet</span> · MIT or Apache 2.0 · Not affiliated with or endorsed by GitHub.</p>
+    <a href="https://github.com/xRookieFight/Rivet">github.com/xRookieFight/Rivet</a>
+  </footer>
+</body>
+</html>
