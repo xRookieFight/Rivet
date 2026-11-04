@@ -60,7 +60,7 @@ android {
 dependencies {
     implementation("androidx.appcompat:appcompat:1.7.1")
     // android-activity 0.6 speaks the 4.x GameActivity glue
-    implementation("androidx.games:games-activity:4.4.0")
+    implementation("androidx.games:games-activity:4.4.2")
     implementation("org.rustls:rustls-platform-verifier:$verifierVersion")
 }
 
