@@ -32,7 +32,7 @@ urlencoding = "2"
 
 [target.'cfg(not(target_os = "android"))'.dependencies]
 open = "5"
-rfd = "0.17"
+rfd = "0.18"
 
 [target.'cfg(target_os = "android")'.dependencies]
 android-activity = { version = "0.6", features = ["game-activity"] }
