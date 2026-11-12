@@ -36,7 +36,7 @@ jobs:
           cp -r site/. _site/
           cp -r docs/screenshots _site/screenshots
           cp assets/rivet.png _site/rivet.png
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v3
       - id: deployment
         uses: actions/deploy-pages@v4
